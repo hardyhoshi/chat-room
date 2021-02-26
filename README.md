@@ -14,6 +14,8 @@
 
 ### Association
 
+- has_many :messages
+
 ## messagesテーブル
 
 | Column  | Type       | Options |
@@ -23,5 +25,5 @@
 
 ### Association
 
-belongs_to :user
-belongs_to :room
+- belongs_to :user
+- belongs_to :room
