@@ -5,8 +5,13 @@
     display: inline-block;
     .content {
       background-color: #eeeeee;
-      padding: 10px;
-      border-radius: 15px;
+      padding: 8px 16px;
+      border-radius: 20px;
+    }
+    .author {
+      font-size: 0.8rem;
+      color: #777777;
+      margin-left: 10px;
     }
   }
   .chat-box {
