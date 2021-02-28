@@ -5,7 +5,6 @@
     min-height: 59px;
     .content-container {
       display: inline-block;
-      float: right;
       .content {
         background-color: #eeeeee;
         padding: 8px 16px;
@@ -15,6 +14,12 @@
         font-size: 0.8rem;
         color: #777777;
         margin-left: 10px;
+      }
+    }
+    &.me {
+      .content-container {
+        float: right;
+        
       }
     }
   }
