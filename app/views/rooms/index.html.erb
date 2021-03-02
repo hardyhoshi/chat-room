@@ -16,7 +16,8 @@
         <%= link_to room do %>
           <div class="card no-outline mb-2">
             <div class="card-body">
-              <%= room.name %>
+              <b><%= room.name %></b><br>
+              <small><%= room.users.count %> Members</small>
             </div>
           </div>
         <% end %>
