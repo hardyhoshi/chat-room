@@ -30,13 +30,11 @@
     <div class="col-9">
       <% if @room.present? %>
         <div class="chat-room">
-          <nav class="navbar navbar-light bg-light mb-4">
-            <span class="navbar-brand" href="#"><%= @room.name %></span>
-            <ul class='navbar-nav'>
-              <li class='nav-item'>
-                Hello, <%= current_user.username %>
-              </li>
-            </ul>
+          <nav class="navbar navbar-light">
+            <span class="navbar-brand" href="#">
+              <b><%= @room.name %></b>
+            </span>
+            <small><%= @room.users.uniq.count %> Members</small>
           </nav>
           <div id="messages">
             <% @room.messages.each do |message| %>
