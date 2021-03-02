@@ -17,7 +17,7 @@
           <div class="card no-outline mb-2">
             <div class="card-body">
               <b><%= room.name %></b><br>
-              <small><%= room.users.count %> Members</small>
+              <small><%= room.users.uniq.count %> Members</small>
             </div>
           </div>
         <% end %>
