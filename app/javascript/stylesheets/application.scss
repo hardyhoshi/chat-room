@@ -51,9 +51,10 @@
    text-decoration: none;
   }
   .room-card {
+    transition: background-color 0.5s ease;
+    border-radius: 20px;
     &:hover {
       background-color: #eeeeee;
-      border-radius: 20px;
     }
     .name {
       font-weight: bold;
